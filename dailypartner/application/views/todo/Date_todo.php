@@ -1,47 +1,70 @@
 <div class="slideDiv ">
-
     <div id="slideE" class="sideTodo">
 
-        <p class="Todo-title fontdeco-inverse">To-Do</p>
-        <section id="task-form">
-            <input id="create-task" type="text" name="task-insert" placeholder="Insert your list items here">
-            <i class="fa fa-paper-plane-o" id="insert-btn" aria-hidden="true" onclick="inserttodo('<?=$selectData->start_day?>')"></i>
+        <!--상단-->
+        <p class="Todo-title fontdeco-inverse">Diary</p>
+        <section id="task-form" class="form-group" style="margin: 0">
+            <input id="create-task" class="form-control" type="text" name="task-insert"
+                   placeholder="Insert your list items here" style="width: 80%; display: inline-block">
+            <a class="btn btn-fab btn-fab-mini" id="insert-btn" onclick="inserttodo('<?= $selectData->start_day ?>')"
+               style="height: 25px; width: 25px; min-width: 25px; display: inline-block; margin-left: 5px"><i
+                    class="material-icons">send</i></a>
         </section>
 
+        <!--하단-->
         <p class="Todo-title"><?php echo $selectData->start_day; ?></p>
-        <section id="task-container">
-            <div id="task-list" style="overflow:auto">
-                <?php
-                foreach ($todoIndate as $todo) {
-                    ?>
-                    <ul class="task-one" id="workNumber<?= $todo->work_num ?>">
-                        <li id="task-content<?= $todo->work_num ?>">
-                            <label id="check<?= $todo->work_num ?>">
-                                <?php if ($todo->confirm_check == 1) { ?>
-                                    <input type='checkbox' id="checkbox<?= $todo->work_num ?>"
-                                           onclick="checktodo('<?= $todo->work_num ?>')" checked>
-                                    <a class="completed_item"><?php echo $todo->work ?></a>
-                                <?php } ?>
-                                <?php if ($todo->confirm_check == 0) { ?>
-                                    <input type='checkbox' id="checkbox<?= $todo->work_num ?>"
-                                           onclick="checktodo('<?= $todo->work_num ?>')">
-                                    <a><?php echo $todo->work ?></a>
-                                <?php } ?>
-                            </label>
-                            <i class="fa fa-pencil" id="edit<?= $todo->work_num ?>" onclick="edittodo(<?= $todo->work_num ?>)"></i>
-                            <i class="fa fa-trash" onclick="deletetodo(<?= $todo->work_num ?>)"></i>
+        <section> <!-- id="task-container"-->
+            <ul style="padding: 0">
+                <div id="task-list" style="word-break: break-all;">
+                    <?php foreach ($todoIndate as $todo) { ?>
+                        <li id="workNumber<?= $todo->work_num ?>">
+                            <div class="checkbox row" id="task-content<?= $todo->work_num ?>">
+                                <label class="col-xs-8" id="check<?= $todo->work_num; ?>"
+                                       style="margin-left: 15px;padding: 0">
+                                    <?php if ($todo->confirm_check == 1) { ?>
+                                        <input type='checkbox' onclick="checktodo('<?= $todo->work_num; ?>')" checked>
+                                        <span class="completed_item" id="todo_contents"><?= $todo->work; ?></span>
+                                        <?php if($todo->result){?>}
+                                        <p>
+                                        <h4 id="result<?=$todo->work_num?>" style="color: #00b3ee">結果 : <?= $todo->result ?></h4>
+                                        </p>
+                                        <?php }?>
+                                    <?php } ?>
+                                    <?php if ($todo->confirm_check == 0) { ?>
+                                        <input type='checkbox' onclick="checktodo('<?= $todo->work_num; ?>')">
+                                        <span id="todo_contents"><?= $todo->work; ?></span>
+                                    <?php } ?>
+                                </label>
+                                <!--modify or delete-->
+                                <p id='btnWithTodo<?= $todo->work_num ?>' class="col-xs-3"
+                                   style="right: 15px; text-align: right; padding: 0">
+                                    <a class="btn" style="padding: 1px 2px; margin: 0">
+                                        <i class="material-icons" id="edit<?= $todo->work_num; ?>"
+                                           onclick="edittodo(<?= $todo->work_num; ?>,'<?= $todo->work; ?>')">mode_edit</i></a>
+                                    <a class="btn" style="padding: 0 2px; margin: 0">
+                                        <i class="material-icons"
+                                           onclick="deletetodo(<?= $todo->work_num; ?>)">delete</i></a>
+                                </p>
+                            </div>
                         </li>
-                    </ul>
-                    <?php
-                } ?>
-            </div>
+                    <?php } ?>
+                </div>
+            </ul>
         </section>
     </div>
-
-    <i id="TodoBtn"><i class="fa fa-angle-double-right" aria-hidden="true"></i></i>
+    <a id="TodoBtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></a><!--닫는 버튼-->
 </div>
-<script>
 
+<script>
+    $(document).ready(function () {
+
+        $.material.init();
+
+        $(window).resize(function () {
+            var height = $('.navbar').css('height');
+            $('main').css('marginTop', height);
+        });
+    });
 
     $('#create-task').keypress(function (e) {
         if (e.which == 13) {
@@ -61,15 +84,15 @@
             url: '/TodoList/deletetodo',
             data: {'work_num': workNumber},
             success: function (data) {
-                $("ul#workNumber" + workNumber).remove();
+                $("li#workNumber" + workNumber).remove();
+                /*id가 workNumber:n를 가진 li 제거*/
             }
         });
     }
 
     function inserttodo(startday) {
 
-        var uid =
-        <?=$_SESSION['login']['UID']?>
+        var uid = <?=$_SESSION['login']['UID']?>;
 
         var text = $("#create-task").val();
 
@@ -82,16 +105,18 @@
                 'start_day': startday
             },
             success: function (data) {
+                console.log(data);
                 $("#task-list").prepend(data);
+                $("#create-task").val('');
             }
         });
     }
-    function edittodo(workNumber) {
 
-        $("#edit" + workNumber).replaceWith("<i id='edit-btn" + workNumber + "'class='fa fa-check' onclick='modifytodo(" + workNumber + ")'></i>");
-        $("#check" + workNumber).after("<input id= 'edit-content"+workNumber+"'class='test' type='text'>");
+    function edittodo(workNumber, contents) { //수정폼
+        $("#edit" + workNumber).replaceWith("<i id='edit-btn" + workNumber + "' class='material-icons' onclick='modifytodo(" + workNumber + ")'>done</i>");
+        $("#check" + workNumber).after("<input id='edit-content" + workNumber + "' class='test' type='text' value='" + contents + "'>");
     }
-    /*("#edit-btn" + workNumber).replaceWith("<button id='edit<?=$todolist[0]->work_num?>' class='fa fa-pencil' onclick='edittodo(<?=$todolist[0]->work_num?>)'></button>");*/
+
     function modifytodo(workNumber) {
 
         var text = $("#edit-content" + workNumber).val();
@@ -104,10 +129,10 @@
                 'work_num': workNumber
             },
             success: function (data) {
-                var a = JSON.parse(data);
-                $("#check" + workNumber + " > a").text(a.work);
+                var contents = JSON.parse(data);
+                $("#check" + workNumber + " #todo_contents").text(contents.work);
                 $("#edit-content" + workNumber).remove();
-                $("#edit-btn" + workNumber).replaceWith("<i id='edit" + workNumber + "' class='fa fa-pencil' onclick='edittodo(" + workNumber + ")'></i>");
+                $("#edit-btn" + workNumber).replaceWith("<i id='edit" + workNumber + "' class='material-icons' onclick='edittodo(" + workNumber + ")'>mode_edit</i>");
             }
         });
     }
@@ -121,20 +146,48 @@
                 'work_num': workNumber
             },
             success: function (data) {
+                /*material bootstrap으로인해 span객체가 #todo_contents객체 앞에 생겨난다*/
+                var resultN = $("#check" + workNumber + " #todo_contents").hasClass("completed_item");//hasClass : 클래스 유무판단
+
+                if (resultN) { //completed_item class가 있으면
+                    $("#check" + workNumber + " #todo_contents").removeClass("completed_item");
+                    $("#result"+ workNumber).hide();
+
+                } else {
+                    $("#check" + workNumber + " #todo_contents").addClass("completed_item");
+                    if(data == 0) {
+                        $("#btnWithTodo" + workNumber).after("<input id='inputResult" + workNumber + "' class='test' type='text'>" +
+                            "<i id='enrollResult" + workNumber + "' class='material-icons' onclick='enrollResult(" + workNumber + ")'>done</i>" +
+                            "<i id='deleteResult" + workNumber + "' class='material-icons' onclick='deleteResult(" + workNumber + ")'>delete</i>");
+                    }
+                    $("#result" + workNumber).show();
+                }
+                /*window.alert(resultN);*/
             }
         });
     }
+    function enrollResult(workNumber) {
 
-    $('input[type=checkbox]').click(function () {
+        var content = $("#inputResult" + workNumber).val();
 
-        if ($(this).next().attr("class") == "completed_item")
-            $(this).next().removeAttr("class");
-        else
-            $(this).next().attr("class", "completed_item");
+        $.ajax({
+            type: 'POST',
+            url: '/TodoList/enrollResult',
+            data: {
+                'work_num': workNumber,
+                'result': content
+            },
+            success: function (data) {
 
-    });
+                $("#inputResult" + workNumber).remove();
+                $("#enrollResult" + workNumber).remove();
+                $("#deleteResult" + workNumber).remove();
+                $("#check" + workNumber).append("<p><h4 id = 'result"+workNumber+"'style='color: #00b3ee'>結果 : "+content+"</h4></p>");
+            }
 
-    $(document).on('keypress', 'ul input[class="test"]', function (e) {
+        });
+    }
+    $(document).on('keypress', 'li input[class="test"]', function (e) { /*ul안의 input의 class가 test일 경우*/
 
         if (e.which == 13) {
             $(this).next().click();

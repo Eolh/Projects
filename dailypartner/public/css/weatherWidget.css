@@ -1,8 +1,10 @@
 .weatherWeget {
-    color: #27282c;
-    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    height: 245px; /*100%*/
     width: 100%;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    margin-left: 0;
 }
 
 .info_top {
@@ -12,13 +14,9 @@
 .info_bottom {
     text-align: left;
 }
+
 .weatherWeget blockquote {
     border-color: rgba(87, 124, 189, 0.7);
-}
-
-#weather_icon {
-    float: left;
-    background-color: rgba(39, 40, 44, 0.3);
 }
 
 #weather_name {

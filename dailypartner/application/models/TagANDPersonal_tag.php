@@ -105,7 +105,10 @@ class TagANDPersonal_tag extends CI_Model
 
         $result = $this->db->get()->result();
 
-        return $result;
+        if($result)
+            return $result;
+        else
+            return null;
     }
 
     function getFileListByUIDAndSearch($data)
@@ -147,7 +150,10 @@ class TagANDPersonal_tag extends CI_Model
 
         $result = $this->db->get()->result();
 
-        return $result;
+        if($result)
+            return $result;
+        else
+            return null;
     }
 
     function getFileListByTag($data)

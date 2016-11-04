@@ -77,6 +77,7 @@ class CalendarANDSchedule extends CI_Model
             'lastTime' => $data->end,
             'title' => $data->title,
             'content' => $data->content,
+            'firstRank' => $data->color
         );
 
         $this->db->insert('schedule', $insertData);

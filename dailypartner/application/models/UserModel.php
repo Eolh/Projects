@@ -81,19 +81,9 @@ class UserModel extends CI_Model
 
     }
 
-    function curdate()
-    {
-
-        $sql1 = "select curdate() as date";
-
-        $re = $this->db->query($sql1)->row();
-
-        return $re;
-    }
-
     function groupadd($data, $curdate)
     {
-        $sql2 = "INSERT INTO balance.group (`gnum`, `gname`, `create_by`, `create_date`, `member_count`) VALUES (NULL, '$data->gname', '{$_SESSION['login']['UID']}', '$curdate->date', '1')";
+        $sql2 = "INSERT INTO balance.group (`gnum`, `gname`, `create_by`, `create_date`) VALUES (NULL, '$data->gname', '{$_SESSION['login']['UID']}', '$curdate->date')";
 
         $this->db->query($sql2);
 
@@ -139,13 +129,21 @@ class UserModel extends CI_Model
 
     function addMemberinGroup($data)
     {
-        $sql2 = "INSERT INTO `group_member` (`gm_id`, `gnum`, `uid`) VALUES (NULL, '$data->gnum', '$data->UID')";
+        $sql1 = "INSERT INTO `group_member` (`gm_id`, `gnum`, `uid`) VALUES (NULL, '$data->gnum', '$data->UID')";
 
-        $this->db->query($sql2);
+        $this->db->query($sql1);
 
-        $sql3 = "SELECT * FROM user WHERE UID = $data->UID";
+        $sql2 = "SELECT member_count FROM balance.group WHERE gnum = '$data->gnum'";
 
-        $result = $this->db->query($sql3)->result();
+        $re = $this->db->query($sql2)->row();
+
+        $sql3 = "UPDATE balance.group SET `member_count` = $re->member_count + 1  WHERE gnum = $data->gnum;";
+
+        $this->db->query($sql3);
+
+        $sql4 = "SELECT * FROM user WHERE UID = $data->UID";
+
+        $result = $this->db->query($sql4)->result();
 
         return $result;
     }

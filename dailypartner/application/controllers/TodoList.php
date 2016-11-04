@@ -6,13 +6,7 @@ class TodoList extends CI_Controller
     {
         parent::__construct();
 
-        $prefs['template'] = array(
-            'table_open' => '<table class="calendar">',
-            'cal_cell_start' => '<td class="day">',
-            'cal_cell_start_today' => '<td class="today">'
-        );
-        /* start: library */
-        $this->load->library('calendar', $prefs);
+  
         /* start: database */
         $this->load->database();
         /* start: library */
@@ -27,7 +21,9 @@ class TodoList extends CI_Controller
         $alltodolist = $this->todo_model->alltodolist();
         $curdate = $this->todo_model->curdate();
         $dateintodo = $this->todo_model->dateintodo();
-        $data['cal'] = $this->calendar->generate();
+        $url = $_REQUEST['url'];
+        $data['url'] = explode('/',$url);
+
         $data['curdate'] = $curdate;
         $data['alltodolist'] = $alltodolist;
         $data['dateintodo'] = $dateintodo;
@@ -55,7 +51,9 @@ class TodoList extends CI_Controller
 
             $selectData = new requestValue();
             $selectData->insertProperty($_POST);
+            $curdate = $this->todo_model->curdate();
 
+            $data['curdate'] = $curdate;
             $data['todoIndate'] = $this->todo_model->selecttodoindate($selectData);
             $data['selectData'] = $selectData;
 
@@ -133,7 +131,6 @@ class TodoList extends CI_Controller
 
     public function checktodo()
     {
-
         if ($_POST) {
 
             $checkData = new requestValue();
@@ -146,6 +143,26 @@ class TodoList extends CI_Controller
             } else {
                 $this->todo_model->notchecktodo($checkData);
             }
+
+            $result = $this->todo_model->selectResult($checkData->work_num);
+
+            if($result->result==""){
+                echo json_encode(0);
+            }
+            else{
+                echo json_encode(1);
+            }
+        }
+    }
+    public function enrollResult()
+    {
+        if ($_POST) {
+
+            $resultData = new requestValue();
+            $resultData->insertProperty($_POST);
+
+            $this->todo_model->enrollResult($resultData);
+
         }
     }
 }

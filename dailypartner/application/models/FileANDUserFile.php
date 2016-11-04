@@ -72,7 +72,15 @@ class FileANDUserFile extends CI_Model
         return $this->db->get()->result();
     }
 
+    function getGroupFile($data)
+    {
+        $this->db->select('f.FNum, f.FName, f.Flink, f.hashtag');
+        $this->db->from('file f');
+        $this->db->join('group_file uf','uf.FNum = f.FNum');
+        $this->db->where('uf.SdNum',$data);
 
+        return $this->db->get()->result();
+    }
 
     function getFileList($data)
     {

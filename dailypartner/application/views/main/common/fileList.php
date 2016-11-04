@@ -22,7 +22,7 @@ if ( $fileList )
 
                 <p class="list-group-item-text">
                     <?=
-                    ($file->hashtag != null) ? $tagConverter->convertFileTagsMask($file->hashtag) : "なし!!";
+                    ($file->hashtag != null) ? $tagConverter->convertFileTagsMask($file->hashtag) : "없음!!";
                     ?>
                 </p>
             </div>
@@ -39,7 +39,7 @@ if ( $fileList )
         <div class="row-content">
 
             <p class="list-group-item-text">
-                <h4>ファイルがない</h4><!--//파일이 없습니다.-->
+                <h4>ファイルがない</h4>
             </p>
         </div>
     </div>

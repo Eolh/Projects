@@ -47,7 +47,8 @@ class Maps extends CI_Controller
 
             $todolist = $this->todo_model->todolist();
             $curdate = $this->todo_model->curdate();
-
+            $url = $_REQUEST['url'];
+            $data['url'] = explode('/',$url);
 
             $data['curdate'] = $curdate;
             $data['todolist'] = $todolist;

@@ -1,10 +1,14 @@
 /*version3. 오후 3:25 2016-06-10*/
 
 .background-texture {
-    background-size: auto 100%; /*contain, cover*/
     background-image: url(/public/img/Geometric_Gradient_8.jpg);
+    background-position: right 50px;
+    background-size: auto 100%; /*contain, cover, auto 100%*/
     background-attachment: fixed;
 }
+
+/*briefing*/
+
 
 /*Draw dashboard*/
 .dashboard-base {
@@ -12,17 +16,24 @@
     padding: 10px;
 }
 
-.dashboard-left {}
-.dashboard-center {}
-.dashboard-right {}
+.dashboard-left {
+}
+
+.dashboard-center {
+}
+
+.dashboard-right {
+}
 
 .dashboard-box {
     padding: 10px;
 }
 
 .dashboard-box .wiget {
-    height:auto;
-}  /*#dashboard-box-n1 ~ n6*/
+    height: auto;
+}
+
+/*#dashboard-box-n1 ~ n6*/
 
 .wiget {
     width: 100%;
@@ -45,6 +56,7 @@
     top: 0;
     z-index: 10;
 }
+
 .wiget .wiget-handle:hover {
     cursor: pointer;
     background-color: #00c5cc;
@@ -72,9 +84,40 @@ mark {
     font-weight: 500;
     background-color: transparent;
 }
+
 mark:hover {
     background-color: rgba(224, 232, 232, 0.7);
     /*수평, 수직, 블러, 색상*/
     -webkit-box-shadow: 0 2px 1px 0 rgba(39, 40, 44, 0.3);
     box-shadow: 0 2px 1px 0 rgba(39, 40, 44, 0.3);
+}
+
+/*가로로 회전*/
+.kaitenn {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    display: inline-block;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.kaitenn:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.kaitenn.stop {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/* Opacity #2 */
+.hover12 .member_caption {
+    background-color: rgba(39, 40, 44, 0.7);
+}
+.hover12 .member_caption img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover12 .member_caption:hover img {
+    opacity: .5;
 }

@@ -85,8 +85,6 @@
                         //var name  = $("#GroupSelectedTag").text();
                         var gm_id = $("#GroupSelectedTag").attr('gm_id');
 
-                        console.log(gm_id);
-
                         $.ajax({
                             type : "POST",
                             url  : "/group/fileListerGroupSearch",
@@ -106,6 +104,8 @@
             file_list('<?=isset($selectedName) ? $selectedName : null; ?>');
             file_groupList('', '<?=$gnum?>');
         });
+
+        var gnum = '<?=$gnum?>';
 
         function file_list(tag) {
 
@@ -131,14 +131,14 @@
             $("#gp_schedule").modal("show");
 
             var test = data;
-            console.log(test.FName);
+
             $("#title").text(test.title);
             $("#staTime").text(test.startTime);
             $("#endTime").text(test.lastTime);
             $("#content").text(test.content);
             $("#file").empty();
             $("#file").append(
-                "<iframe src='https://docs.google.com/gview?url=https://balancemyschedule.tk/public/file/foway/" + test.FName + "&embedded=true' style='width:100%; height:450px;' frameborder='0'>" + "</iframe>"
+                "<iframe src='https://docs.google.com/gview?url=https://133.130.125.87/public/file/group_" + gnum + "/" + test.FName + "&embedded=true' style='width:100%; height:450px;' frameborder='0'>" + "</iframe>"
             );
         }
 
@@ -153,8 +153,10 @@
                 },
                 success : function (data) {
 
+                    console.log(data);
+
                     if(gm_id == "") {
-                        $("#GroupSelectedTag").html("全部");
+                        $("#GroupSelectedTag").html("全員");
                         $("#GroupSelectedTag").attr('onclick', 'file_groupList("", ' + gnum + ')');
                         $("#GroupSelectedTag").attr('gm_id', 'all');
                     } else {
@@ -165,6 +167,7 @@
                                 gm_id : gm_id
                             },
                             success : function(data) {
+
                                 $("#GroupSelectedTag").attr('onclick', 'file_groupList("' + gm_id + '", "' + gnum + '")');
                                 $("#GroupSelectedTag").html(data);
                                 $("#GroupSelectedTag").attr('gm_id', gm_id);

@@ -20,6 +20,7 @@ class requestValue extends error_reporter
     public $boardnum;
     public $bnum;
     public $cnum;
+    public $result;
 
     /* image Upload */
     public $name;
@@ -108,6 +109,10 @@ class requestValue extends error_reporter
     public $gm_id;
     public $firstRank;
     /* end    calendar && Schedule*/
+
+    public $phoneNumber;
+    public $keyWord;
+    public $multiCalendar;
 
     function insertProperty($property)
     {

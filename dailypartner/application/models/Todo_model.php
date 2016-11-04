@@ -112,7 +112,22 @@ class Todo_model extends CI_Model
         $result = $db->get()->row();
 
         return $result;
+    }
 
+    function enrollResult($data){
+
+        $sql = "UPDATE `todo` SET `result` = '$data->result' WHERE `todo`.`work_num` = $data->work_num";
+
+        $this->db->query($sql);
+    }
+
+    function selectResult($data){
+
+        $sql = "SELECT result From todo WHERE work_num = $data";
+
+        $result = $this->db->query($sql)->row();
+
+        return $result;
     }
 }
 ?>

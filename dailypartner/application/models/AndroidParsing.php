@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016-06-05
- * Time: 오후 5:50
- */
 class AndroidParsing extends CI_Model
 {
     function getAll()
@@ -36,5 +30,59 @@ class AndroidParsing extends CI_Model
         $this->db->insert("schedule", $insertData);
 
         return $this->db->insert_id();
+    }
+
+    function getAutoList($data)
+    {
+        $db = $this->db;
+        $db->select("*");
+        $db->from("androidParsing");
+        $db->where("UID", $data->UID);
+
+        $result = $this->db->get()->result();
+
+        return $result;
+    }
+
+    function getCalendarName($data)
+    {
+        $db = $this->db;
+
+        $db->select("calName");
+        $db->from("calendar c");
+        $db->join("user_calendar uc", "c.calNum = uc.calNum");
+        $db->where("uc.UCNum", $data->UCNum);
+
+        $result = $this->db->get()->row();
+
+        return $result->calName;
+    }
+
+    function insertParsing($data)
+    {
+        $insertData = array
+        (
+            "UID" 	    => $data->UID,
+            "UCNum"     => $data->multiCalendar,
+            "phoneNum" => $data->phoneNumber,
+            "keyword"  => $data->keyWord,
+        );
+
+        $this->db->insert("androidParsing", $insertData);
+
+        return $this->db->insert_id();
+    }
+
+    function getParsing($data)
+    {
+        $db = $this->db;
+
+        $db->select("*");
+        $db->from("androidParsing");
+        $db->where("apNum", $data);
+
+        $result = $this->db->get()->row();
+
+        return $result;
     }
 }

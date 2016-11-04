@@ -31,3 +31,19 @@ for ($x = 0; $x<count($fileList); $x++)
         </td>
     </tr>
 <?php } ?>
+<?php if(empty($fileList) || count($fileList) == 0) { ?>
+
+    <tr class="row">
+        <td class="col-sm-1 text-center">なし</td>
+        <td class="col-sm-3">NOファイル</td>
+        <td class="col-sm-1">なし</td>
+        <td class="col-sm-2">なし</td>
+        <td class="col-sm-3">なし</td>
+        <td class="col-sm-2" style="cursor: pointer">
+            <em style="word-break: break-all">
+                なし
+            </em>
+        </td>
+    </tr>
+
+<?php } ?>

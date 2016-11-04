@@ -1,3 +1,4 @@
-<li role="presentation" id = '<?=$teamName[0]->gname?>' class="active" onclick="grouplistView('<?=$teamName[0]->gnum?>')">
-    <a><?= $teamName[0]->gname ?></a>
+<li role="presentation" id="<?= $teamInfo[0]->gname; ?>"
+    onclick="grouplistView('<?= $teamInfo[0]->gnum; ?>')"> <!--class:active-->
+    <a><?= $teamInfo[0]->gname; ?></a>
 </li>

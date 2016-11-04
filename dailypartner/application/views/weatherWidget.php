@@ -23,7 +23,7 @@
     </div>
     <div style="height: 16%;">
         <div class="col-sm-8">
-            <img src="/public/img/w_notice.png"><span style="vertical-align: bottom">炎暑注意</span>
+            <img src="/public/img/w_notice.png"><span style="vertical-align: bottom">傘準備</span>
         </div>
         <div class="col-sm-4" style="text-align:right;font-size: 16px; padding: 0; line-height: 10px">
             <i class="fa fa-tint" aria-hidden="true"></i><span id="humidity"></span>%

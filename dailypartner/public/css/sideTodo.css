@@ -6,33 +6,35 @@
     z-index: 10;
 }
 .slideDiv * {
+    text-decoration: none;
     font-weight: 300;
     font-size: 16px;
-    color: white;
 }
 .slideDiv li {
+    list-style: none;
     text-decoration: none;
-}
-
-.Todo-title {
-    /*background-color: rgba(39, 40, 44, 0.7);*/
-    background-color: rgba(87, 124, 189, 0.71);
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 35px;
-    text-indent: 10px;
 }
 
 .sideTodo {
     width: 230px;
     height: 100%;
     float: right;
-    background-color: rgba(39, 40, 44, 0.71);
-    border: solid 2px #577cbd;
+    background-color: #fafafa;
+    -webkit-box-shadow: -5px 0 7px rgba(198, 198, 198, 0.5); /*밑길이 우측길이 스프레드 색상*/
 }
+
+.Todo-title {
+    background-color: #577cbd;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+}
+
 .sideTodo section {
-    padding: 10px;
+    padding: 4px 0 10px 10px;
 }
 
 .sideTodo section input[type="checkbox"] {
@@ -40,18 +42,30 @@
 }
 
 .sideTodo input {
-    background-color: rgba(255, 255, 255, 0.05);
+    color: #577cbd;
+    font-size: large;
+}
+.sideTodoBtn {
+    background: transparent;
     border: transparent;
-    color: white;
+    color: #577cbd;
+    height: 30px;
+    min-width: 30px;
+    width: 30px;
+}
+.sideTodoBtn:hover {
+    color: #fafafa;
+    background: #00c5cc;
+    border-radius: 50% !important;
 }
 
 #TodoBtn {
     text-decoration: none;
     position: relative;
-    background-color: rgba(39, 40, 44, 0.71);
-    border: solid 2px #577cbd;
-
-    color: white;
+    float: right;
+    padding: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: -3px 3px 7px rgba(198, 198, 198, 0.5); /*우측길이 밑길이 스프레드 색상*/
 }
 
 
@@ -62,5 +76,5 @@
     }
 }
 .completed_item {
-    text-decoration: line-through;
+    text-decoration: line-through !important;
 }

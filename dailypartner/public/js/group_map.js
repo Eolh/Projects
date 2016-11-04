@@ -626,7 +626,7 @@ $(function () {
                             $('#' + id).attr('latitude', member_schedule[id][i].latitude);
                             $('#' + id).attr('longitude', member_schedule[id][i].longitude);
                         }
-
+                        
                         if (member_schedule[id][i].exsit_place == 1) {
 
                             if (i > 0) {

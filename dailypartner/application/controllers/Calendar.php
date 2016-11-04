@@ -25,6 +25,8 @@ class Calendar extends CI_Controller
         /* start: modelHandler */
         $calendarData = new requestValue();
         $calendarData->UID   = $_SESSION['login']['UID'];
+        $url = $_REQUEST['url'];
+        $data['url'] = explode('/',$url);
         /* end:   modelHandler */
 
         /* send: data */

@@ -27,6 +27,8 @@ class File extends CI_Controller
         $fileData = new requestValue();
         $fileData->UID = $_SESSION['login']['UID'];
         $fileData->tag = $tag;
+        $url = $_REQUEST['url'];
+        $data['url'] = explode('/',$url);
         /* end:   modelHandler */
 
         $data['tagConverter'] = new HashTag();
@@ -46,7 +48,6 @@ class File extends CI_Controller
         {
             $fileData->hashTag = $data['tagList'][$x]->tagName;
             $data['tagList'][$x]->fileList = $this->TagANDPersonal_tag->getFileListByTag($fileData);
-
         }   /* 태그 별로 수를 세기 위함... */
 
         //getArgDumpDied($data['fileList']);
@@ -109,7 +110,6 @@ class File extends CI_Controller
             $data['fileList']   = $this->TagANDPersonal_tag->getFileListByUID($fileData);
 
         /* 현재 페이지의 파일에 대한 리스트 */
-
         $this->load->view('/file/fileLister', $data);
     }
 

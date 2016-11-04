@@ -187,7 +187,16 @@ class AjaxHandler extends CI_Controller
         }
     }
 
+    function getgroupFile()
+    {
+        if ($_POST) {
+            $ajaxdata = new requestValue();
+            $ajaxdata->insertProperty($_POST);
 
+            $value = $this->FileANDUserFile->getGroupFile($ajaxdata->SdNum);
+            echo json_encode($value);
+        }
+    }
 
     function getscheduleWithDate()
     {

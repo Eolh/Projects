@@ -2,7 +2,7 @@
     <div id="slideE" class="sideTodo">
 
         <!--상단-->
-        <p class="Todo-title fontdeco-inverse">To-Do</p>
+        <p class="Todo-title fontdeco-inverse">Diary</p>
         <section id="task-form" class="form-group" style="margin: 0">
             <input id="create-task" class="form-control" type="text" name="task-insert"
                    placeholder="Insert your list items here" style="width: 80%; display: inline-block">
@@ -19,10 +19,16 @@
                     <?php foreach ($todolist as $todo) { ?>
                         <li id="workNumber<?= $todo->work_num ?>">
                             <div class="checkbox row" id="task-content<?= $todo->work_num ?>">
-                                <label class="col-xs-8" id="check<?= $todo->work_num; ?>" style="margin-left: 15px;padding: 0">
+                                <label class="col-xs-8" id="check<?= $todo->work_num; ?>"
+                                       style="margin-left: 15px;padding: 0">
                                     <?php if ($todo->confirm_check == 1) { ?>
                                         <input type='checkbox' onclick="checktodo('<?= $todo->work_num; ?>')" checked>
                                         <span class="completed_item" id="todo_contents"><?= $todo->work; ?></span>
+                                        <?php if($todo->result){?>}
+                                        <p>
+                                        <h4 id="result<?=$todo->work_num?>" style="color: #00b3ee">結果 : <?= $todo->result ?></h4>
+                                        </p>
+                                        <?php }?>
                                     <?php } ?>
                                     <?php if ($todo->confirm_check == 0) { ?>
                                         <input type='checkbox' onclick="checktodo('<?= $todo->work_num; ?>')">
@@ -30,7 +36,8 @@
                                     <?php } ?>
                                 </label>
                                 <!--modify or delete-->
-                                <p class="col-xs-3" style="right: 15px; text-align: right; padding: 0">
+                                <p id='btnWithTodo<?= $todo->work_num ?>' class="col-xs-3"
+                                   style="right: 15px; text-align: right; padding: 0">
                                     <a class="btn" style="padding: 1px 2px; margin: 0">
                                         <i class="material-icons" id="edit<?= $todo->work_num; ?>"
                                            onclick="edittodo(<?= $todo->work_num; ?>,'<?= $todo->work; ?>')">mode_edit</i></a>
@@ -134,14 +141,42 @@
 
                 if (resultN) { //completed_item class가 있으면
                     $("#check" + workNumber + " #todo_contents").removeClass("completed_item");
+                    $("#result"+ workNumber).hide();
+
                 } else {
                     $("#check" + workNumber + " #todo_contents").addClass("completed_item");
+                    if(data == 0) {
+                    $("#btnWithTodo" + workNumber).after("<input id='inputResult" + workNumber + "' class='test' type='text'>" +
+                        "<i id='enrollResult" + workNumber + "' class='material-icons' onclick='enrollResult(" + workNumber + ")'>done</i>" +
+                        "<i id='deleteResult" + workNumber + "' class='material-icons' onclick='deleteResult(" + workNumber + ")'>delete</i>");
+                    }
+                    $("#result" + workNumber).show();
                 }
                 /*window.alert(resultN);*/
             }
         });
     }
+    function enrollResult(workNumber) {
 
+        var content = $("#inputResult" + workNumber).val();
+
+        $.ajax({
+            type: 'POST',
+            url: '/TodoList/enrollResult',
+            data: {
+                'work_num': workNumber,
+                'result': content
+            },
+            success: function (data) {
+
+                $("#inputResult" + workNumber).remove();
+                $("#enrollResult" + workNumber).remove();
+                $("#deleteResult" + workNumber).remove();
+                $("#check" + workNumber).append("<p><h4 id = 'result"+workNumber+"'style='color: #00b3ee'>結果 : "+content+"</h4></p>");
+            }
+
+        });
+    }
     $(document).on('keypress', 'li input[class="test"]', function (e) { /*ul안의 input의 class가 test일 경우*/
 
         if (e.which == 13) {

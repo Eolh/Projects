@@ -138,7 +138,7 @@ class GroupFile extends CI_Model
 
         $db->select("u.name");
         $db->from("group_member gm");
-        $db->join("user u", "gm.gm_id = u.UID");
+        $db->join("user u", "gm.uid = u.UID");
         $db->where("gm.gm_id", $data->gm_id);
 
         $result = $db->get()->row();
@@ -147,5 +147,38 @@ class GroupFile extends CI_Model
             return $result->name;
         else
             return null;
+    }
+
+    function getGroupFileList($data)
+    {
+        $db = $this->db;
+
+        $db->select("*");
+        $db->from("group_file gf");
+        $db->join("group_member gm", "gf.gm_id = gm.gm_id");
+        $db->join("file f", "f.FNum = gf.FNum");
+        $db->join("user u", "u.UID = gm.uid");
+        $db->where("gnum", $data->gnum);
+
+        $result = $db->get()->result();
+
+        return $result;
+    }
+
+    function getGroupFileListByMember($data)
+    {
+        $db = $this->db;
+
+        $db->select("*");
+        $db->from("group_file gf");
+        $db->join("group_member gm", "gf.gm_id = gm.gm_id");
+        $db->join("file f", "f.FNum = gf.FNum");
+        $db->join("user u", "u.UID = gm.uid");
+        $db->where("gnum", $data->gnum);
+        $db->where("gf.gm_id", $data->gm_id);
+
+        $result = $db->get()->result();
+
+        return $result;
     }
 }

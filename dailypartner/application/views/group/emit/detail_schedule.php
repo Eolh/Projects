@@ -3,102 +3,53 @@
         $('#myCarousel').carousel({interval: false});
         $('#myCarousel').carousel({keyboard: true});
     });
-    $('#myonoffswitch').click(function () {
-        SdNum = $(".onoffswitch").val();
-        console.log(SdNum);
-        $.ajax({
-            url: 'group/checked',
-            data: SdNum,
-            type: 'POST',
-            success: function(json){
-                console.log(json);
-            }
-        });
-    });
-
-
 </script>
 <style>
     .onoffswitch {
-        position: relative;
-
-        width: 90px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
     }
-
     .onoffswitch-checkbox {
         display: none;
     }
-
     .onoffswitch-label {
-        display: block;
-        overflow: hidden;
-        cursor: pointer;
-        border: 2px solid #999999;
-        border-radius: 20px;
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #999999; border-radius: 20px;
     }
-
     .onoffswitch-inner {
-        display: block;
-        width: 200%;
-        margin-left: -100%;
+        display: block; width: 200%; margin-left: -100%;
         transition: margin 0.3s ease-in 0s;
     }
-
     .onoffswitch-inner:before, .onoffswitch-inner:after {
-        display: block;
-        float: left;
-        width: 50%;
-        height: 30px;
-        padding: 0;
-        line-height: 30px;
-        font-size: 14px;
-        color: white;
-        font-family: Trebuchet, Arial, sans-serif;
-        font-weight: bold;
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
         box-sizing: border-box;
     }
-
     .onoffswitch-inner:before {
         content: "";
         padding-right: 10px;
-        background-color: #EEEEEE;
-        color: #999999;
+        background-color: #EEEEEE; color: #999999;
         text-align: right;
     }
-
     .onoffswitch-inner:after {
         content: "完了";
         padding-left: 30px;
-        background-color: #34A7C1;
-        color: #FFFFFF;
+        background-color: #34A7C1; color: #FFFFFF;
     }
-
     .onoffswitch-switch {
-        display: block;
-        width: 18px;
-        margin: 6px;
+        display: block; width: 18px; margin: 6px;
         background: #FFFFFF;
-        position: absolute;
-        top: 0;
-        bottom: 0;
+        position: absolute; top: 0; bottom: 0;
         right: 56px;
-        border: 2px solid #999999;
-        border-radius: 20px;
+        border: 2px solid #999999; border-radius: 20px;
         transition: all 0.3s ease-in 0s;
     }
-
     .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
         margin-left: 0;
     }
-
     .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
         right: 0px;
-    }
-
-    4
+    }4
 </style>
 <div class="modal-dialog">
     <div class="modal-content"><!-- id="modalContent"-->
@@ -106,9 +57,8 @@
 
             <!--file view-->
             <div class="text-center" style="height: 300px; margin: 2px; background-color: rgba(87, 124, 189, 0.2)">
-                <!--<div id = mymap style="height: 100%;"></div>-->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-slide-to="1"
-                     style="width: 100%; height: 100%">
+<!--<div id = mymap style="height: 100%;"></div>-->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-slide-to="1" style="width: 100%; height: 100%">
 
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -122,27 +72,27 @@
                         <!--값없으면 안보여주기-->
                         <div class="item active">
                             <div id="mymap" style="width: 100%;height: 300px;"></div><!-- id="schedulemap" -->
-                            <!---->
-                            <!--                            <div class="carousel-caption">-->
-                            <!--                                <h3>Maps</h3>-->
-                            <!--                                <p>위치 정보 : local name</p>-->
-                            <!--                            </div>-->
+<!---->
+<!--                            <div class="carousel-caption">-->
+<!--                                <h3>Maps</h3>-->
+<!--                                <p>위치 정보 : local name</p>-->
+<!--                            </div>-->
                         </div>
                         <div class="item">
                             <div id="schedulefile" style="width: 100%;height: 300px;"></div><!-- id="schedulefile" -->
-                            <!---->
-                            <!--                            <div class="carousel-caption">-->
-                            <!--                                <h3>file preview</h3>-->
-                            <!--                                <p>연관 파일 : ??</p>-->
-                            <!--                            </div>-->
+<!---->
+<!--                            <div class="carousel-caption">-->
+<!--                                <h3>file preview</h3>-->
+<!--                                <p>연관 파일 : ??</p>-->
+<!--                            </div>-->
                         </div>
                         <div class="item">
                             <div id="freediv" style="width: 100%;height: 300px;"></div>
-                            <!---->
-                            <!--                            <div class="carousel-caption" style="bottom: 0; background-color: rgba(39, 40, 44, 0.3)">-->
-                            <!--                                <h3>할일 퍼센트</h3>-->
-                            <!--                                <p>그래프 : ??</p>-->
-                            <!--                            </div>-->
+<!---->
+<!--                            <div class="carousel-caption" style="bottom: 0; background-color: rgba(39, 40, 44, 0.3)">-->
+<!--                                <h3>할일 퍼센트</h3>-->
+<!--                                <p>그래프 : ??</p>-->
+<!--                            </div>-->
                         </div>
                     </div>
 
@@ -163,9 +113,8 @@
             <blockquote class="info" style="margin-bottom: 0">
                 <!--title-->
                 <p style="font-weight: 300">
-                    <i class="fa fa-hashtag"></i><span id="scheduletitle" style="font-size: 25px;">
-                        <div class="onoffswitch">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                    <i class="fa fa-hashtag"></i><span id="scheduletitle" style="font-size: 25px;"><div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" >
                             <label class="onoffswitch-label" for="myonoffswitch">
                                 <span class="onoffswitch-inner"></span>
                                 <span class="onoffswitch-switch"></span>

@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Board_m extends CI_Model
 {
-    function addGroupBoard($data,$curdate)
+    function addGroupBoard($data, $curdate)
     {
         $sql1 = "SELECT gnum FROM balance.group WHERE gname = '{$data->gname}'";
 
@@ -13,7 +13,7 @@ class Board_m extends CI_Model
 
         $re2 = $this->db->query($sql2)->row();
 
-        $sql3 = "INSERT INTO `group_board` (`bnum`, `gnum`, `title`, `content`, `create_by`, `hit`, `create_date`) VALUES (NULL, '$re->gnum', '$data->gname 그룹 게시판 입니다.', '그룹원과의 소통 중심 게시판 입니다.', '$re2->ID', '0', '$curdate->date')";
+        $sql3 = "INSERT INTO `group_board` (`bnum`, `gnum`, `title`, `content`, `create_by`, `hit`, `create_date`) VALUES (NULL, '$re->gnum', '$data->gname グループ掲示板です。', 'グループメンバーとのコミュニケーションができます。', '$re2->ID', '0', '$curdate->date')";
 
         $this->db->query($sql3);
 
@@ -22,6 +22,15 @@ class Board_m extends CI_Model
     function groupBoardList($groupNum)
     {
         $sql = "SELECT * FROM group_board WHERE gnum = $groupNum ORDER BY all_check DESC, create_date DESC";
+
+        $result = $this->db->query($sql)->result();
+
+        return $result;
+    }
+
+    function groupBoardAllCheck($data)
+    {
+        $sql = "SELECT * FROM group_board WHERE gnum = $data->gnum and all_check = 1 ORDER BY create_date DESC limit 0,3";
 
         $result = $this->db->query($sql)->result();
 
@@ -52,6 +61,7 @@ class Board_m extends CI_Model
         return $result;
 
     }
+
     function updateAllCheck($data)
     {
         $sql = "UPDATE `group_board` SET `all_check` = '1' WHERE `group_board`.`bnum` = $data";
@@ -59,6 +69,7 @@ class Board_m extends CI_Model
         $this->db->query($sql);
 
     }
+
     function searchBaordDetail($data)
     {
         $sql = "SELECT * FROM group_board WHERE bnum = '$data'";
@@ -72,7 +83,7 @@ class Board_m extends CI_Model
     {
         $sql = "SELECT gname FROM balance.group WHERE gnum = $data";
 
-        $result= $this->db->query($sql)->row();
+        $result = $this->db->query($sql)->row();
 
         return $result;
     }
@@ -81,7 +92,7 @@ class Board_m extends CI_Model
     {
         $sql = "SELECT create_by FROM balance.group WHERE gnum = $data";
 
-        $result= $this->db->query($sql)->row();
+        $result = $this->db->query($sql)->row();
 
         return $result;
     }
@@ -127,8 +138,58 @@ class Board_m extends CI_Model
         return $hitcount;
     }
 
-    function searchbyUID($UID)
+    function deleteComment($cnum)
     {
+        $sql = "DELETE From group_comment WHERE cnum = $cnum";
 
+        $this->db->query($sql);
+    }
+
+    function SearchIDbyUID($UID)
+    {
+        $sql = "SELECT ID FROM balance.user WHERE UID = $UID";
+
+        $result = $this->db->query($sql)->row();
+
+        return $result;
+    }
+
+    function deleteBoard($bnum)
+    {
+        $sql1 = "DELETE From group_comment WHERE bnum = $bnum";
+
+        $this->db->query($sql1);
+
+        $sql2 = "DELETE From group_board WHERE bnum = $bnum";
+
+        $this->db->query($sql2);
+    }
+
+    function moveContentBySdNum($SdNum)
+    {
+        $sql = "SELECT * FROM group_schedule WHERE SdNum = $SdNum";
+
+        $result = $this->db->query($sql)->result();
+
+        return $result;
+    }
+    function SearchUIDbygm_id($gm_id)
+    {
+        $sql = "SELECT UID FROM group_member WHERE gm_id = $gm_id";
+
+        $result = $this->db->query($sql)->row();
+
+        return $result;
+    }
+
+    function scheduleMoveEnroll($moveContent,$moveData,$createdate,$ID)
+    {
+        $sql1 = "SELECT ID FROM balance.user WHERE UID = '{$_SESSION['login']['UID']}'";
+
+        $userID = $this->db->query($sql1)->row();
+
+        $sql2 = "INSERT INTO `group_board` (`bnum`, `gnum`, `title`, `content`, `create_by`, `hit`, `create_date`) VALUES (NULL, '$moveData->gnum', '[仕事変更、$ID->ID] $moveContent->title', ' $moveContent->title($moveData->start ~ $moveData->end) -> $moveContent->startTime ~ $moveContent->lastTime で変更されました。', '$userID->ID', '0', '$createdate->date')";
+
+        $this->db->query($sql2);
     }
 }

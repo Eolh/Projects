@@ -1,0 +1,46 @@
+/*boardDetailView*/
+
+#editor {
+    padding-top: 5px;
+    text-indent: 10px;
+}
+
+.view_table {
+    text-indent: 10px;
+    /*width: 850px;*/
+}
+.view {
+    background-color: #577cbd;
+    color: #fff;
+}
+.view_s {
+    color: #e0e8e8;
+    font-size: 13px;
+    text-align: center;
+}
+#view_contents {
+    min-height: 300px;
+    max-width: 450px;
+    font-size: large;
+    text-indent: 20px;
+    border-bottom: 1px solid lightblue;
+}
+
+#re_btn{
+    width: 66px;
+    height: 66px;
+    padding: 5px;
+    text-align: center;
+}
+
+#re_date{
+    width: 550px;
+    color: lightslategrey;
+    font-size: 13px;
+    text-align:left;
+}
+#re_sel{
+    color: lightslategrey;
+    font-size: 13px;
+    text-align:right;
+}

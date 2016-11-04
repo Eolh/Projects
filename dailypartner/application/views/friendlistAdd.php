@@ -3,7 +3,7 @@ foreach ($friendInfo as $friend) { ?>
     <tr id=friend<?= $friend->UID ?>>
         <td class="col-sm-1" style="vertical-align: middle">
             <div class="row-picture">
-                <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
+                <img class="circle" src="/public/img/NULL.png" alt="icon">
                 <!-- src="" -->
             </div>
         </td>

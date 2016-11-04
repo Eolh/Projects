@@ -10,7 +10,7 @@ $page = 2;
                 </div>
             <div class="bb-item">
                 <div class="bb-custom-firstpage">
-                    <h1>TodoList</h1>
+                    <h1>Diary</h1>
                 </div>
                 <div class="bb-custom-side">
                     <p>Test space</p>

@@ -51,9 +51,9 @@ foreach ($dashboardList as $dashboard) { ?>
                 <div class="col-sx-12 col-sm-6 col-lg-6 dashboard-right item">
                     <div class="col-sx-12 col-sm-12 col-lg-12 dashboard-box">
                         <div class="wiget panel">
-                            <a href="/board/boardList/<?=$dashboard->gnum;?>"><p class="wiget-handle texture-img">Notice</p></a>
+                            <a href="/group/boardList/<?=$dashboard->gnum;?>"><p class="wiget-handle texture-img">Notice</p></a>
 
-                            <div>掲示板
+                            <div id = group_boardList>掲示板
                                 <div></div><!--게시판-->
                             </div>
                         </div>

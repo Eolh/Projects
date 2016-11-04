@@ -12,10 +12,12 @@ class Main extends CI_Controller
         $this->load->database();
         $this->load->model('CalendarANDSchedule');
         $this->load->model('Group');
+        $this->load->model('GroupFile');
         $this->load->model('FileANDUserFile');
         $this->load->model('Maps_m');
         $this->load->model('Todo_model');
         $this->load->model('GroupCalendar');
+        $this->load->model('Board_m');
         /* end of database */
 
         ///////////////////////////////////////////////////////////////////
@@ -39,7 +41,8 @@ class Main extends CI_Controller
         $dashData->UID   = $_SESSION['login']['UID'];
         $dashData->UCNum = 1; /* default Calendar */
         /* end:   modelHandler */
-
+        $url = $_REQUEST['url'];
+        $data['url'] = explode('/',$url);
         $data['groupInfo'] = $this->Group->getGroupList($dashData);
 
         $this->load->view("/main/dashboard", $data);
@@ -245,5 +248,31 @@ class Main extends CI_Controller
         echo json_encode($data['fullEvents']);
     }
 
+    /* 2016-09-21 group fileList */
 
+    public function getGroupFileList($gnum)
+    {
+        $ajaxData = new requestValue();
+        $ajaxData->gnum = $gnum;
+
+        if(isset($_POST['gm_id'])) {
+            $ajaxData->gm_id = $_POST['gm_id'];
+            $data['fileList'] = $this->GroupFile->getGroupFileListByMember($ajaxData);
+        } else {
+            $data['fileList'] = $this->GroupFile->getGroupFileList($ajaxData);
+        }
+
+        $this->load->view("/main/common/groupFileList", $data);
+    }
+
+    public function getGroupBaordList($gnum)
+    {
+        $ajaxData = new requestValue();
+        $ajaxData->gnum = $gnum;
+
+        $data['boardList'] = $this->Board_m->groupBoardAllCheck($ajaxData);
+
+        $this->load->view("/main/common/boardListAllCheck", $data);
+
+    }
 }

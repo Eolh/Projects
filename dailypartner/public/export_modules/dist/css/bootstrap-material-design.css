@@ -2246,9 +2246,14 @@ legend {
 }
 .navbar .navbar-brand {
   position: relative;
-  height: 60px;
+  /*height: 60px;*/
   line-height: 30px;
   color: inherit;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-brand {
+    line-height: 0;
+  }
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
@@ -2654,7 +2659,12 @@ fieldset[disabled] .navbar .btn-link:focus {
 .navbar-inverse {
   background-color: #27282c;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px){
+  .navbar .navbar-form {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
   .navbar .navbar-brand {
     height: 50px;
     padding: 10px 15px;

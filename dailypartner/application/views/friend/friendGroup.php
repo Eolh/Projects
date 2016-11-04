@@ -54,9 +54,8 @@
 
     <!--material동작처리-->
 
-    <script src="/public/js/command.js">
-
-    </script>
+    <script src="/public/js/FriendAndGroup.js"></script>
+    <script src="/public/js/command.js"></script>
     <script>
         $(document).ready(function () {
             $.material.init();
@@ -146,11 +145,6 @@
     <div class="main-paper">
         <div>
             <h3><i class="material-icons">supervisor_account</i> 友達及びグループ</h3>
-            <ol>
-                <li> 검색창에서 이름 혹은 번호를 검색하여 친구 추가</li>
-                <li> 친구의 리스트와 그룹의 리스트</li>
-                <li> 그룹 추가시, 친구 리스트에서 선택해 그룹원으로 설정</li>
-            </ol>
         </div>
         <div class="row">
             <!--friend list-->
@@ -184,7 +178,8 @@
 
                                 </td>
                                 <td class="col-lg-3 col-xs-3" style="margin-right: 8px; vertical-align: middle;">
-                                    <a onclick="friendaddlist_delete('<?= $friend->UID; ?>')" title="<?= $friend->UID; ?>"
+                                    <a onclick="friendaddlist_delete('<?= $friend->UID; ?>')"
+                                       title="<?= $friend->UID; ?>"
                                        class="btn btn-fab btn-default"
                                        style="height: 40px; min-width: 40px; width: 40px; color: #c76047; float: right; margin-left: 10px;"><i
                                             class="material-icons" style="font-weight: bolder">remove</i></a>
@@ -209,8 +204,7 @@
                         <tr id=friend<?= $friend->UID ?>>
                             <td class="col-sm-1" style="vertical-align: middle">
                                 <div class="row-picture">
-                                    <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
-                                    <!-- src="" -->
+                                    <img class="circle" src="/public/img/NULL.png" alt="icon" style="opacity: 0.5;">
                                 </div>
                             </td>
                             <td class="col-lg-8 col-sm-8">
@@ -222,8 +216,9 @@
 
                             </td>
                             <td class="col-lg-3 col-sm-3" style="margin-right: 8px; vertical-align: middle;">
-                                <a id="add_friend_in_group<?= $friend->UID; ?>" class="btn btn-fab" style="height: 40px; min-width: 40px; width: 40px; float:right;">
-                                <i class="material-icons" style="font-weight: bolder">add</i></a>
+                                <a id="add_friend_in_group<?= $friend->UID; ?>" class="btn btn-fab"
+                                   style="height: 40px; min-width: 40px; width: 40px; float:right;">
+                                    <i class="material-icons" style="font-weight: bolder">add</i></a>
                             </td>
                         </tr>
                     <?php } ?>
@@ -236,44 +231,60 @@
                 <table class="table table-hover">
                     <thead>
                     <tr>
-                        <th class="table-title table-title-s1">GROUP LIST</th>
+                        <th class="table-title table-title-s1" colspan="3">GROUP LIST</th>
                     </tr>
-                    <tr>
-                        <th style="float: right">
-                            <label for="tab_title">Title</label>
-                            <input type="text" name="tab_title" id="Group_name" placeholder="Group Nmae"
-                                   class="ui-widget-content ui-corner-all">
-                            <button class="btn" id="add_group" onclick="Addgroup()">+ Add group</button>
+                    <!--Add Group-->
+                    <tr class="form-group" style="margin: 0; padding: 0">
+
+                        <th class="input-group col-sm-12" colspan="2">
+                            <input class="form-control col-sm-9" type="text" name="tab_title" id="Group_name"
+                                   placeholder="Group Nmae" style="text-indent: 20px">
+                        </th>
+                        <th>
+                            <span class="input-group-btn col-sm-4">
+                                <button class="btn btn-primary" type="button" id="add_group" onclick="Addgroup()">+ Add
+                                    group
+                                </button>
+                            </span>
                         </th>
                     </tr>
-                    <tr>
-                        <td>
-                            <ul class="nav nav-tabs" id="group_add">
-                                <?php
-                                if ($groupList) {
-                                    foreach ($groupList as $groupInfo) {
+                    <!--Print GroupList-->
+                    <?php
+                    if ($groupList) { ?>
+                        <tr>
+                            <th colspan="3">
+                                <ul class="nav nav-tabs" id="group_add">
+                                    <!--여기에 추가된 group 붙음-->
+                                    <?php foreach ($groupList as $groupInfo) {
                                         for ($i = 0; $i < count($groupInfo); $i++) {
                                             ?>
                                             <!-- Nav tabs -->
-                                            <li role="presentation" id ='<?= $groupInfo[$i]->gname ?>' class="active" onclick=grouplistView('<?=$groupInfo[$i]->gnum?>')>
-                                                <a><?= $groupInfo[$i]->gname ?></a>
+                                            <li role="presentation" id="<?= $groupInfo[$i]->gname; ?>"
+                                                onclick="grouplistView('<?= $groupInfo[$i]->gnum; ?>')">
+                                                <a><?= $groupInfo[$i]->gname; ?></a>
                                             </li>
                                         <?php }
-                                    }
-                                } else { ?>
-                    <tr>
-                        <td colspan="3" align="center"><h4>新しい友達リクエストはありません</h4></td>
-                    </tr>
-                    <?php } ?>
-
-                    </ul>
-                    </td>
-                    </tr>
-                    </thead>
-                    <tbody id = "group_list">
-                        <tr>
-
+                                    } ?>
+                                </ul>
+                            </th>
                         </tr>
+                    <?php } else { ?>
+                        <tr>
+                            <th style="text-align: center" colspan="3"><h4>Please Add Group</h4></th>
+                        </tr>
+                    <?php } ?>
+                    </thead>
+
+                    <!--Group Member List-->
+                    <!--replaceWith함수로 tbody-->
+                    <tbody class="tab-content" id="group_list">
+                    <div class="tab-pane row">
+                        <tr>
+                            <td style="text-align: center" colspan="3">
+                                select group tab<!--친구추가 방식 소개-->
+                            </td>
+                        </tr>
+                    </div>
                     </tbody>
                 </table>
             </div>
