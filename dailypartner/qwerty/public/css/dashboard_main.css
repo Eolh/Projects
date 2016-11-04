@@ -1,0 +1,44 @@
+body
+{
+    min-height : 800px;
+    border     : 1px dashed black;
+}
+
+main
+{
+    margin-top: 45px; /*Q:상단바에 맞춰서 내리게 할 순 없을까?jquery-resize*/
+    min-height : inherit;
+    border     : 3px dotted purple;
+}
+
+main #dashboard
+{
+    min-height : inherit;
+    border     : 1px groove pink;
+}
+
+main #dashboard .good, main #dashboard .better, main #dashboard .best
+{
+    width  : 33.3%;
+    height : 260px;
+    float  : left;
+}
+
+.good .block, .better .block, .best .block
+{
+    border : 1px groove pink;
+    height : inherit;
+}
+
+@media screen and (max-width: 320px) {
+    body, main #dashboard .good, main #dashboard .better, main #dashboard .best
+    {
+        width  : 100%;
+    }
+}
+/*maybe tablet*/
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    body {
+        width  : 100%;
+    }
+}

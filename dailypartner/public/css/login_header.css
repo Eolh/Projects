@@ -1,0 +1,11 @@
+.texture-img {
+    background: url("/public/img/header0-7.png"), url("/public/img/header0-5.png"), #27282c;
+}
+main {
+    margin-top: 60px;
+}
+@media (max-width: 768px) {
+    main {
+        margin-top: 50px;
+    }
+}

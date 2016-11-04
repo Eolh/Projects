@@ -1,0 +1,66 @@
+.slideDiv {
+    height: 100%;
+    float: right;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+}
+.slideDiv * {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.slideDiv li {
+    text-decoration: none;
+}
+
+.Todo-title {
+    /*background-color: rgba(39, 40, 44, 0.7);*/
+    background-color: rgba(87, 124, 189, 0.71);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-indent: 10px;
+}
+
+.sideTodo {
+    width: 230px;
+    height: 100%;
+    float: right;
+    background-color: rgba(39, 40, 44, 0.71);
+    border: solid 2px #577cbd;
+}
+.sideTodo section {
+    padding: 10px;
+}
+
+.sideTodo section input[type="checkbox"] {
+    background-color: transparent;
+}
+
+.sideTodo input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: transparent;
+    color: white;
+}
+
+#TodoBtn {
+    text-decoration: none;
+    position: relative;
+    background-color: rgba(39, 40, 44, 0.71);
+    border: solid 2px #577cbd;
+
+    color: white;
+}
+
+
+
+@media screen and (max-width: 620px) {
+    .slideDiv {
+        visibility: hidden;
+    }
+}
+.completed_item {
+    text-decoration: line-through;
+}

@@ -1,0 +1,27 @@
+main {
+    min-height: 100px;
+}
+
+.background-design {
+    height: 466px;
+    background: url("/public/img/sample-basic.jpg") #00c5cc no-repeat;/*Geometric_Gradient_8.jpg*/
+    background-size: contain; /*contain, cover, percentage*/
+    /*background-position: top center;*/
+    background-attachment: fixed;
+}
+
+.well {
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+#loginbox {
+    z-index: 1000 !important;
+    float: left !important;
+    margin: 5% 27%;
+}
+
+@media (max-width: 768px) {
+    #loginbox {
+        margin: 15% 0;
+    }
+}

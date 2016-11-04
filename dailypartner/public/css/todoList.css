@@ -1,0 +1,156 @@
+.bb-custom-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(39, 40, 44, 0.2);
+	box-shadow: 0 2px 5px 0 rgba(39, 40, 44, 0.2);
+}
+
+.bb-custom-wrapper .bb-bookblock {
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 2000px;
+	perspective: 2000px; /*원근법*/
+}
+
+.bb-custom-side {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+}
+.bb-custom-side:nth-child(3n+1) {
+	background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(39,40,44,0.05), rgba(39,40,44,0.07));
+}
+.bb-custom-side:nth-child(3n+2) {
+	background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(39,40,44,0.05),  rgba(39,40,44,0.1));
+}
+
+.bb-custom-firstpage {
+	text-align: center;
+	padding-top: 15%;
+	width: 50%;
+	float: left;
+	height: 100%;
+	background-color: #00c5cc;
+}
+.bb-custom-firstpage h1 {
+	font-size: 1.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 600;
+	background: #fff;
+
+}
+/*.bb-custom-firstpage h1 span {
+	display: block;
+	font-size: 60%;
+	opacity: 0.3;
+	padding: 0 0 0.6em 0.1em;
+}*/
+
+.bb-custom-side p {
+	padding: 8%;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+.bb-custom-wrapper .contents-title {
+	font-size: 1.3em;
+	font-weight: 600;
+	margin: auto;
+	border-bottom:1px solid rgba(39,40,44,0.3);
+}
+
+.bb-custom-wrapper > nav {
+	width: 100%;
+	background-color: rgba(39, 40, 44, 0.3);
+	float: right;
+	z-index: 1000;
+	text-align: center;
+	/*height: 40px;
+	margin: 1em auto 0;
+	position: fixed;
+	bottom: 20;
+	*/
+}
+
+.bb-custom-wrapper > nav a {
+	display: inline-block;
+	padding: 0 5px;
+	text-align: center;
+	border-radius: 2px;
+	background: #577cbd;
+	color: #fff;
+	margin: 2px;
+}
+
+.bb-custom-wrapper > nav a:hover {
+	background: #fff;
+	color: #577cbd;
+}
+/*scrollbar*/
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	-webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(87, 124, 189, 0.2);
+}
+::-webkit-scrollbar-thumb:active {
+	background: rgba(87, 124, 189, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(87, 124, 189, 0.5);
+}
+
+/* No JS */
+.no-js .bb-custom-wrapper {
+	height: auto;
+}
+
+.no-js .bb-custom-content {
+	height: 470px;
+}
+
+@media screen and (max-width: 61.75em){
+	.bb-custom-side {
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-width: 33em){
+	.bb-custom-side {
+		font-size: 60%;
+	}
+}
+.completed_item {
+	text-decoration: line-through;
+}
+#List{
+	width: 80%;
+	height: 300px;
+	z-index: 5000;
+	margin-left: 10%;
+	position: fixed;
+	top: 0;
+	margin-top: 60px;
+}
+#TodoClose, #FileClose{
+	float: right;
+	z-index: 5500;
+	right: 20px;
+	position: fixed;
+}
+#TodoList,#FileList{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#ViewList{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+}

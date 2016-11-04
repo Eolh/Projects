@@ -1,0 +1,29 @@
+/*updateSchedule.css*/
+
+.updateSchedule div {
+    padding: 20px;
+    border: solid 1px lavender;
+    position: relative;
+}
+.commonEmptyTimeForm, .groupListForm {
+    max-width: 407px;
+}
+.writeScheduleForm {
+    max-width: 612px;
+}
+.writeScheduleForm .form-content input {
+    padding: 0 5px;
+}
+
+.writeScheduleForm .form-content #sch_f_time,
+.writeScheduleForm .form-content #sch_l_time {
+    width: 120px;
+}
+
+.search #sch_file {
+    padding: 0 25px 0 5px;
+}
+.search #searchicon {
+    z-index: 1;
+    text-indent: -10%;
+}

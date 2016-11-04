@@ -1,0 +1,104 @@
+#MAP_CANVAS {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#mymap {
+    width: 100%;
+    height: 100%;
+}
+
+.map_navi {
+    background-color: white;
+
+    margin-top: 45px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+}
+
+#group_members {
+    background-color: white;
+
+    margin-top: 45px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+}
+
+.Itemlist {
+    /*item*/
+    border-left: 5px solid #ededed;
+    width: 100%;
+    padding: 10px 0;
+}
+.Itemlist:hover {
+    border-left: 5px solid #00c5cc;
+}
+
+.gm-style-iw {
+    /*maker: hover, tooltip*/
+    /*apply 10px to the bottom corners of the infowindow*/
+}
+
+/*===========[ Navi_detail ]============*/
+
+/*navi title : today date*/
+.date {
+    font-size: 20px;
+    line-height: 35px;
+    color: #fff;
+    background: #00c5cc linear-gradient(to bottom,
+    rgba(224, 232, 232, 0.25),
+    rgba(224, 232, 232, 0.25) 45%,
+    rgba(39, 40, 44, 0) 45%,
+    rgba(39, 40, 44, 0) 100%);
+    /*수평, 수직, 블러, 색상*/
+    -webkit-box-shadow: 0 2px 5px 0 rgba(39, 40, 44, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(39, 40, 44, 0.4);
+}
+/*일정 표시 (과거-현재-미래) : Item list*/
+.past_data {
+    background-color : #e0e8e8;
+    color: #a9a9a9;
+    opacity: 0.7;
+}
+.current_data {
+    background-color : #fff;
+    border-left: 5px solid #577cbd;
+    font-weight: 600;
+}
+.future_data {
+    background-color : rgba(87, 124, 189, 0.5);
+    color: #27282c;
+}
+/* <p> Tag */
+.Time {
+    /*Item list - time*/
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* <p> Tag */
+.place { /*Item list - place*/
+    font-size: 17px;
+    line-height: 30px;
+}
+.current_data .place span:before {
+    content: "\e062"
+}
+
+.title {
+    /*Item list - title*/
+    font-size: 14px;
+    margin: 0;
+}
