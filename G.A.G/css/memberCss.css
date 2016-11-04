@@ -1,0 +1,81 @@
+#login:hover, #signUp:hover {
+    background-color: lightcoral;
+}
+
+#cancel:hover {
+    background-color: gray;
+}
+
+#signUp {
+    background-color: rosybrown;
+
+}
+
+#signUp, #cancel {
+    border: 0.5px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    font: 28px bolder sans-serif;
+}
+
+.signUp_box .sign_form #cc_btn {
+    position: absolute;
+    top: 220px;
+    right: 190px;
+}
+
+.signUp_box .sign_form #join_btn {
+    position: absolute;
+    top: 170px;
+    right: 190px;
+}
+
+.loginChk .log_form #member_btn {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+#member_btn {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+}
+
+#login {
+    border: 0.5px;
+    width: 270px;
+    height: 65px;
+    cursor: pointer;
+    background-color: #777777;
+    color: white;
+    font: 45px bolder sans-serif;
+}
+
+.loginChk .log_form div label, .signUp_box div label {
+    display: inline-block;
+    width: 90px;
+    margin-top: 10px;
+    color: #777;
+    font-size: 13px;
+}
+
+.loginChk .log_form div input, .signUp_box div input {
+    width: 230px;
+    height: 32px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    line-height: 32px;
+}
+
+.loginChk .log_form, .signUp_box .sign_form {
+    position: relative;
+}
+
+.loginChk, .signUp_box {
+    width: 770px;
+    height: 300px;
+}

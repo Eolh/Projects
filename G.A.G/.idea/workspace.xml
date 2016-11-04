@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07188a72-21f0-4afd-a605-65fef32290e0" name="Default" comment="productCreate">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product/C116362.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/product_s/C116362_S.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/controller/BoardCTL.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/model/BoardDAO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/model/replyDAO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/Navi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/800/800.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/800/810.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/800/820.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/900/931.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/BodyPage800.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/common/reply.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/product/0.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/view/body/product/10.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/SubMenu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/100/100.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/100/110.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/100/120.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/100/130.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/100/140.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/100/150.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/200/200.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/200/210.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/200/220.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/200/230.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/200/240.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/200/250.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/300/300.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/300/310.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/300/320.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/300/330.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/300/340.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/300/350.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/400/400.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/400/410.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/400/420.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/400/430.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/400/440.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/400/450.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/500/500.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/500/510.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/500/520.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/500/530.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/500/540.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/500/550.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/BodyPage200.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/BodyPage300.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/BodyPage400.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/BodyPage500.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/BodyPage600.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/view/body/BodyPage700.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/adminCss.css" afterPath="$PROJECT_DIR$/css/adminCss.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainCss.css" afterPath="$PROJECT_DIR$/css/mainCss.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/memberCss.css" afterPath="$PROJECT_DIR$/css/memberCss.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/controller/AdminCTL.php" afterPath="$PROJECT_DIR$/main/controller/AdminCTL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/controller/MainCTL.php" afterPath="$PROJECT_DIR$/main/controller/MainCTL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/controller/MemberCTL.php" afterPath="$PROJECT_DIR$/main/controller/MemberCTL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/controller/ProductCTL.php" afterPath="$PROJECT_DIR$/main/controller/ProductCTL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/model/conf.php" afterPath="$PROJECT_DIR$/main/model/conf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/model/memberDAO.php" afterPath="$PROJECT_DIR$/main/model/memberDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/model/productDAO.php" afterPath="$PROJECT_DIR$/main/model/productDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/Header.php" afterPath="$PROJECT_DIR$/main/view/Header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/MainBody.php" afterPath="$PROJECT_DIR$/main/view/MainBody.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/MainMenu.php" afterPath="$PROJECT_DIR$/main/view/MainMenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/MainView.php" afterPath="$PROJECT_DIR$/main/view/MainView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/TopMenu.php" afterPath="$PROJECT_DIR$/main/view/TopMenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/0/10.php" afterPath="$PROJECT_DIR$/main/view/body/0/10.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/0/13.php" afterPath="$PROJECT_DIR$/main/view/body/0/13.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/900/900.php" afterPath="$PROJECT_DIR$/main/view/body/900/900.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/900/910.php" afterPath="$PROJECT_DIR$/main/view/body/900/910.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/900/913.php" afterPath="$PROJECT_DIR$/main/view/body/900/913.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/900/920.php" afterPath="$PROJECT_DIR$/main/view/body/900/920.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/900/930.php" afterPath="$PROJECT_DIR$/main/view/body/900/930.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/900/933.php" afterPath="$PROJECT_DIR$/main/view/body/900/933.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/BodyPage100.php" afterPath="$PROJECT_DIR$/main/view/body/BodyPage100.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/view/body/common/pageNavi.php" afterPath="$PROJECT_DIR$/main/view/body/common/pageNavi.php" />
+    </list>
+    <ignored path="JHShop.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="JHShop" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="ProductCTL.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/controller/ProductCTL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminCTL.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/controller/AdminCTL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="251" column="13" selection-start-line="251" selection-start-column="13" selection-end-line="251" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardCTL.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/controller/BoardCTL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="820.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/view/body/800/820.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="23" selection-start-line="60" selection-start-column="16" selection-end-line="62" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="900.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/view/body/900/900.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="913.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/view/body/900/913.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardDAO.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/model/BoardDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.02673147">
+              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+              <folding>
+                <marker date="1450924840829" expanded="true" signature="177:198" placeholder="select count..." />
+                <marker date="1450924840829" expanded="true" signature="495:532" placeholder="SELECT * FRO..." />
+                <marker date="1450924840829" expanded="true" signature="1031:1065" placeholder="select * fro..." />
+                <marker date="1450924840829" expanded="true" signature="1031:1066" placeholder="select * fro..." />
+                <marker date="1450924840829" expanded="true" signature="1031:1067" placeholder="select * fro..." />
+                <marker date="1450924840829" expanded="true" signature="1031:1068" placeholder="select * fro..." />
+                <marker date="1450924840829" expanded="true" signature="1031:1074" placeholder="select * fro..." />
+                <marker date="1450924840829" expanded="true" signature="1659:1673" placeholder="SELECT * FRO..." />
+                <marker date="1450924840829" expanded="true" signature="2249:2303" placeholder="select m_id ..member..." />
+                <marker date="1450924840829" expanded="true" signature="2619:2652" placeholder="delete from ..." />
+                <marker date="1450924840829" expanded="true" signature="2777:2841" placeholder="insert into ..." />
+                <marker date="1450924840829" expanded="true" signature="3278:3313" placeholder="SELECT NVL(M..." />
+                <marker date="1450924840829" expanded="true" signature="3278:3424" placeholder="SELECT NVL(M..." />
+                <marker date="1450924840829" expanded="true" signature="3278:3425" placeholder="SELECT NVL(M..BOARD..." />
+                <marker date="1450924840829" expanded="true" signature="3554:3631" placeholder="SELECT ifnul..." />
+                <marker date="1450924840829" expanded="true" signature="3554:3654" placeholder="SELECT ifnul..BOARD..." />
+                <marker date="1450924840829" expanded="true" signature="3758:3849" placeholder="insert into ..." />
+                <marker date="1450924840829" expanded="true" signature="4069:4178" placeholder="UPDATE BOARD..." />
+                <marker date="1450924840829" expanded="true" signature="4231:4322" placeholder="insert into ..." />
+                <marker date="1450924840829" expanded="true" signature="4691:4730" placeholder="SELECT b_hit..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="910.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/view/body/900/910.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="800.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/view/body/800/800.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="17" selection-start-line="36" selection-start-column="16" selection-end-line="45" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="810.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/view/body/800/810.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="aa" />
+      </map>
+    </option>
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main/view/body/0/11.php" />
+        <option value="$PROJECT_DIR$/main/conf/conf.php" />
+        <option value="$PROJECT_DIR$/main/view/body/0/91.php" />
+        <option value="$PROJECT_DIR$/main/view/body/0/0.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/91.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/911.php" />
+        <option value="$PROJECT_DIR$/main/view/body/BodyPage900.php" />
+        <option value="$PROJECT_DIR$/main/model/adminDAO.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/910.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/900.php" />
+        <option value="$PROJECT_DIR$/main/view/Navi.php" />
+        <option value="$PROJECT_DIR$/main/view/MainBody.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/913.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/920.php" />
+        <option value="$PROJECT_DIR$/main/view/body/0/13.php" />
+        <option value="$PROJECT_DIR$/main/view/body/0/10.php" />
+        <option value="$PROJECT_DIR$/css/memberCss.css" />
+        <option value="$PROJECT_DIR$/css/adminCss.css" />
+        <option value="$PROJECT_DIR$/main/view/MainView.php" />
+        <option value="$PROJECT_DIR$/main/view/Header.php" />
+        <option value="$PROJECT_DIR$/SmartEditor2Skin.html" />
+        <option value="$PROJECT_DIR$/css/smart_editor2.css" />
+        <option value="$PROJECT_DIR$/SmartEditor2_noframe.html" />
+        <option value="$PROJECT_DIR$/main/controller/MemberCTL.php" />
+        <option value="$PROJECT_DIR$/css/mainCss.css" />
+        <option value="$PROJECT_DIR$/main/view/body/900/930.php" />
+        <option value="$PROJECT_DIR$/main/view/MainMenu.php" />
+        <option value="$PROJECT_DIR$/main/view/body/0/20.php" />
+        <option value="$PROJECT_DIR$/main/view/body/BodyPage110.php" />
+        <option value="$PROJECT_DIR$/main/view/body/BodyPage800.php" />
+        <option value="$PROJECT_DIR$/main/view/body/BodyPage100.php" />
+        <option value="$PROJECT_DIR$/main/view/body/product/10.php" />
+        <option value="$PROJECT_DIR$/main/model/memberDAO.php" />
+        <option value="$PROJECT_DIR$/main/view/TopMenu.php" />
+        <option value="$PROJECT_DIR$/main/view/body/product/0.php" />
+        <option value="$PROJECT_DIR$/main/view/body/common/pageNavi.php" />
+        <option value="$PROJECT_DIR$/main/view/body/common/reply.php" />
+        <option value="$PROJECT_DIR$/main/model/replyDAO.php" />
+        <option value="$PROJECT_DIR$/main/controller/ProductCTL.php" />
+        <option value="$PROJECT_DIR$/main/controller/MainCTL.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/main/model/conf.php" />
+        <option value="$PROJECT_DIR$/main/model/productDAO.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/931.php" />
+        <option value="$PROJECT_DIR$/main/view/body/900/933.php" />
+        <option value="$PROJECT_DIR$/main/view/body/800/820.php" />
+        <option value="$PROJECT_DIR$/main/view/body/800/810.php" />
+        <option value="$PROJECT_DIR$/main/controller/AdminCTL.php" />
+        <option value="$PROJECT_DIR$/main/view/body/800/800.php" />
+        <option value="$PROJECT_DIR$/main/controller/BoardCTL.php" />
+        <option value="$PROJECT_DIR$/main/model/BoardDAO.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpMethodParametersCountMismatchInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="900" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="800" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JHShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgbody" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="190" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="231" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="228" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1241" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="191" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="231" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="228" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1240" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\JHShop\main\view\body" />
+      <recent name="C:\xampp\htdocs\JHShop\js" />
+      <recent name="C:\xampp\htdocs\JHShop\img\product_s" />
+      <recent name="C:\xampp\htdocs\JHShop\img" />
+      <recent name="C:\xampp\htdocs\JHShop\main\view\body\common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\JHShop" />
+      <recent name="C:\xampp\htdocs\JHShop\css" />
+      <recent name="C:\xampp\htdocs\JHShop\js" />
+      <recent name="C:\xampp\htdocs\JHShop\main\model" />
+      <recent name="C:\xampp\htdocs\JHShop\main\view\body\900" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\JH\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07188a72-21f0-4afd-a605-65fef32290e0" name="Default" comment="" />
+      <created>1446788973561</created>
+      <option name="number" value="Default" />
+      <updated>1446788973561</updated>
+    </task>
+    <task id="LOCAL-00001" summary="mama">
+      <created>1447831388424</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1447831388424</updated>
+    </task>
+    <task id="LOCAL-00002" summary="aa">
+      <created>1448280847161</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1448280847161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="true" />
+      <flatten-packages value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18895027" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08196721" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mama" />
+    <MESSAGE value="aa" />
+    <option name="LAST_COMMIT_MESSAGE" value="aa" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main/view/body/800/810.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/931.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/model/productDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="18" selection-start-line="190" selection-start-column="18" selection-end-line="190" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/933.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="70" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/imgmenu2/menu4c.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/imgmenu2/menu5c.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/imgmenu2/menu6c.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/Copyright.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/920.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/static_img/NOIMG_S.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/Title.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/BodyPage900.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.806452">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/BodyPage800.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.806452">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/0/10.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/common/pageNavi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.096775">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/0/13.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.387097">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/common/reply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.870968">
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/product/0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.0">
+          <caret line="31" column="81" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/0/0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/model/memberDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7096774">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.225806">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/TopMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.645162">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/MainBody.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.548387">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/product/10.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="30" selection-start-line="48" selection-start-column="27" selection-end-line="57" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/MainMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/MainView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/BodyPage0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.096774">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/BodyPage100.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/930.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.258064">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/product/C116362.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/product/P201512140926144982.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/product/P201512140926144981.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/product/J201512130922254881.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/931.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/933.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="70" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/model/replyDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.741936">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/controller/MainCTL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/controller/MemberCTL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/model/conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/model/productDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="18" selection-start-line="190" selection-start-column="18" selection-end-line="190" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/controller/ProductCTL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/800/820.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="23" selection-start-line="60" selection-start-column="16" selection-end-line="62" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/controller/BoardCTL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/controller/AdminCTL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="251" column="13" selection-start-line="251" selection-start-column="13" selection-end-line="251" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/900.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/913.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/900/910.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/800/810.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/view/body/800/800.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="17" selection-start-line="36" selection-start-column="16" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/model/BoardDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02673147">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding>
+            <marker date="1450924840829" expanded="true" signature="177:198" placeholder="select count..." />
+            <marker date="1450924840829" expanded="true" signature="495:532" placeholder="SELECT * FRO..." />
+            <marker date="1450924840829" expanded="true" signature="1031:1065" placeholder="select * fro..." />
+            <marker date="1450924840829" expanded="true" signature="1031:1066" placeholder="select * fro..." />
+            <marker date="1450924840829" expanded="true" signature="1031:1067" placeholder="select * fro..." />
+            <marker date="1450924840829" expanded="true" signature="1031:1068" placeholder="select * fro..." />
+            <marker date="1450924840829" expanded="true" signature="1031:1074" placeholder="select * fro..." />
+            <marker date="1450924840829" expanded="true" signature="1659:1673" placeholder="SELECT * FRO..." />
+            <marker date="1450924840829" expanded="true" signature="2249:2303" placeholder="select m_id ..member..." />
+            <marker date="1450924840829" expanded="true" signature="2619:2652" placeholder="delete from ..." />
+            <marker date="1450924840829" expanded="true" signature="2777:2841" placeholder="insert into ..." />
+            <marker date="1450924840829" expanded="true" signature="3278:3313" placeholder="SELECT NVL(M..." />
+            <marker date="1450924840829" expanded="true" signature="3278:3424" placeholder="SELECT NVL(M..." />
+            <marker date="1450924840829" expanded="true" signature="3278:3425" placeholder="SELECT NVL(M..BOARD..." />
+            <marker date="1450924840829" expanded="true" signature="3554:3631" placeholder="SELECT ifnul..." />
+            <marker date="1450924840829" expanded="true" signature="3554:3654" placeholder="SELECT ifnul..BOARD..." />
+            <marker date="1450924840829" expanded="true" signature="3758:3849" placeholder="insert into ..." />
+            <marker date="1450924840829" expanded="true" signature="4069:4178" placeholder="UPDATE BOARD..." />
+            <marker date="1450924840829" expanded="true" signature="4231:4322" placeholder="insert into ..." />
+            <marker date="1450924840829" expanded="true" signature="4691:4730" placeholder="SELECT b_hit..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

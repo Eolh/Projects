@@ -1,0 +1,102 @@
+a:link, a:visited {
+    text-decoration: none;
+
+}
+
+a:hover {
+    opacity: 0.7;
+    color: red;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+p {
+    display: block;
+    font-size: 15px;
+
+    color: #777;
+    font-family: sans-serif;
+}
+
+.container, .copyright, .leftMenu, .mainBody, .mainMenu, .title, .topMenu {
+    margin: auto;
+}
+
+.container {
+    width: 1100px;
+    height: 1500px;
+    margin-left: 450px;
+}
+
+.topMenu {
+    width: 1000px;
+    height: 30px;
+    color: #777777;
+    margin-right: 20px;
+    margin-top: -0px;
+}
+
+.topMenu a:hover {
+    color: red;
+}
+
+.topMenu a {
+    color: #777777;
+}
+
+.topMenu li {
+    margin-right: 5px;
+    float: left;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    font: 0.75em sans-serif;
+}
+
+.title {
+    width: 1000px;
+    text-align: center;
+}
+
+.mainMenu table {
+    font: 25px sans-serif bold;
+}
+
+.mainMenu {
+    width: 150px;
+    float: left;
+    text-align: right;
+}
+
+.mainBody {
+    width: 900px;
+    height: 800px auto;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.subMenu {
+    margin-right: 350px;
+    width: 150px;
+    height: 30px;
+}
+
+.nav {
+    top: 250px;
+    right: 100px;
+    position: absolute;
+
+}

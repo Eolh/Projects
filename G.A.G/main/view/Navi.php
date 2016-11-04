@@ -1,0 +1,20 @@
+<?php
+
+?>
+<table>
+    <tr>
+        <td>사이드</td>
+        <td>네비</td>
+        <td>aa</td>
+    </tr>
+    <tr>
+        <td>aa</td>
+        <td>aa</td>
+        <td>aa</td>
+    </tr>
+    <tr>
+        <td>aa</td>
+        <td>aa</td>
+        <td>aa</td>
+    </tr>
+</table>
